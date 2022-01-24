@@ -12,7 +12,8 @@ class WardApp extends StatelessWidget {
     return MaterialApp(
       title: 'W.A.R.D.',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
+        fontFamily: 'Poppins',
       ),
       home: const Scaffold(),
     );
