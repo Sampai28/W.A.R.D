@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'pages/sign_up_page.dart';
+
 void main() {
   runApp(const WardApp());
 }
@@ -15,7 +17,7 @@ class WardApp extends StatelessWidget {
         primarySwatch: Colors.green,
         fontFamily: 'Poppins',
       ),
-      home: const Scaffold(),
+      home: const SignUpPage(),
     );
   }
 }
