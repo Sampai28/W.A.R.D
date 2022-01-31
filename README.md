@@ -1,7 +1,10 @@
 # W.A.R.D
 An IoT device to measure the level of trash in a garbage bin.
 
-Go to app branch to view the App code\n
+Go to app branch to view the App code
+
+
+
 Go to backend branch to view the backend code
 
 ![](WARD.jpeg)
