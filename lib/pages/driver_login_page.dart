@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'dashboard_page.dart';
 import 'sign_up_page.dart';
 
 class DriverLoginPage extends StatelessWidget {
@@ -76,7 +77,11 @@ class DriverLoginPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 10.0),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const DashboardPage(),
+                    ));
+                  },
                   child: const Text(
                     'Login',
                     style: TextStyle(

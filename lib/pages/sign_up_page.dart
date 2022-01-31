@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'dashboard_page.dart';
 import 'driver_login_page.dart';
 
 class SignUpPage extends StatelessWidget {
@@ -112,7 +113,11 @@ class SignUpPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 20.0),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const DashboardPage(),
+                    ));
+                  },
                   child: const Text(
                     'Create Account',
                     style: TextStyle(
