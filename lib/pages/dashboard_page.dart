@@ -2,6 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
+import '../widgets/dashboard_tile.dart';
+
 class DashboardPage extends StatelessWidget {
   const DashboardPage({Key? key}) : super(key: key);
 
@@ -145,67 +147,32 @@ class DashboardPage extends StatelessWidget {
                   filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
                   child: ListView(
                     padding: const EdgeInsets.all(20.0),
-                    children: [
-                      const Text(
+                    children: const [
+                      Text(
                         'Next Stops',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20.0,
                         ),
                       ),
-                      const SizedBox(height: 20.0),
-                      Container(
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                          color: Theme.of(context).primaryColor,
-                          borderRadius: BorderRadius.circular(10.0),
-                        ),
-                        child: ListTile(
-                          leading: const Text(
-                            '7:15\nAM',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
-                          title: const Text(
-                            'MIT Road',
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
-                          subtitle: Row(
-                            children: const [
-                              Icon(
-                                Icons.star,
-                                color: Colors.amber,
-                              ),
-                              Icon(
-                                Icons.star,
-                                color: Colors.amber,
-                              ),
-                              Icon(
-                                Icons.star,
-                                color: Colors.amber,
-                              ),
-                              Icon(
-                                Icons.star,
-                                color: Colors.white,
-                              ),
-                              Icon(
-                                Icons.star,
-                                color: Colors.white,
-                              ),
-                            ],
-                          ),
-                          trailing: const Text(
-                            '85%',
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                      ),
+                      SizedBox(height: 20.0),
+                      DashboardTile(),
+                      SizedBox(height: 20.0),
+                      DashboardTile(),
+                      SizedBox(height: 20.0),
+                      DashboardTile(),
+                      SizedBox(height: 20.0),
+                      DashboardTile(),
+                      SizedBox(height: 20.0),
+                      DashboardTile(),
+                      SizedBox(height: 20.0),
+                      DashboardTile(),
+                      SizedBox(height: 20.0),
+                      DashboardTile(),
+                      SizedBox(height: 20.0),
+                      DashboardTile(),
+                      SizedBox(height: 20.0),
+                      DashboardTile(),
                     ],
                   ),
                 ),
