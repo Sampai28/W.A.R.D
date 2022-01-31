@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'driver_login_page.dart';
+import 'sign_up_page.dart';
 
-class SignUpPage extends StatelessWidget {
-  const SignUpPage({Key? key}) : super(key: key);
+class DriverLoginPage extends StatelessWidget {
+  const DriverLoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class SignUpPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 20.0),
                 Text(
-                  'Create New Account',
+                  'Driver Login',
                   style: TextStyle(
                     color: Theme.of(context).primaryColor,
                     fontWeight: FontWeight.bold,
@@ -39,21 +39,6 @@ class SignUpPage extends StatelessWidget {
                 TextFormField(
                   decoration: InputDecoration(
                     hintText: 'Email',
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5.0),
-                      borderSide: BorderSide.none,
-                    ),
-                    filled: true,
-                    hintStyle: const TextStyle(
-                      color: Colors.black,
-                    ),
-                    fillColor: Colors.grey.shade300,
-                  ),
-                ),
-                const SizedBox(height: 20.0),
-                TextFormField(
-                  decoration: InputDecoration(
-                    hintText: 'Phone Number',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
                       borderSide: BorderSide.none,
@@ -80,11 +65,20 @@ class SignUpPage extends StatelessWidget {
                     fillColor: Colors.grey.shade300,
                   ),
                 ),
-                const SizedBox(height: 20.0),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    TextButton(
+                      onPressed: () {},
+                      child: const Text('Forgot Password?'),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10.0),
                 ElevatedButton(
                   onPressed: () {},
                   child: const Text(
-                    'Create Account',
+                    'Login',
                     style: TextStyle(
                       fontSize: 15.0,
                     ),
@@ -127,9 +121,9 @@ class SignUpPage extends StatelessWidget {
                         Theme.of(context).scaffoldBackgroundColor),
                   ),
                   onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => const DriverLoginPage(),
+                    builder: (context) => const SignUpPage(),
                   )),
-                  child: const Text('Already have an account? Login'),
+                  child: const Text('New user? Create account'),
                 ),
               ],
             ),
