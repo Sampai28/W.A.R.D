@@ -38,6 +38,21 @@ class SignUpPage extends StatelessWidget {
                 const SizedBox(height: 40.0),
                 TextFormField(
                   decoration: InputDecoration(
+                    hintText: 'Name',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                      borderSide: BorderSide.none,
+                    ),
+                    filled: true,
+                    hintStyle: const TextStyle(
+                      color: Colors.black,
+                    ),
+                    fillColor: Colors.grey.shade300,
+                  ),
+                ),
+                const SizedBox(height: 20.0),
+                TextFormField(
+                  decoration: InputDecoration(
                     hintText: 'Email',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
@@ -54,6 +69,21 @@ class SignUpPage extends StatelessWidget {
                 TextFormField(
                   decoration: InputDecoration(
                     hintText: 'Phone Number',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                      borderSide: BorderSide.none,
+                    ),
+                    filled: true,
+                    hintStyle: const TextStyle(
+                      color: Colors.black,
+                    ),
+                    fillColor: Colors.grey.shade300,
+                  ),
+                ),
+                const SizedBox(height: 20.0),
+                TextFormField(
+                  decoration: InputDecoration(
+                    hintText: 'Vehicle Number',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
                       borderSide: BorderSide.none,
